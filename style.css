@@ -9,16 +9,31 @@ body{
     background-color: #222;
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
+.card {
+  width: 90%;
+  max-width: 440px; /* Slightly narrower for better readable line lengths */
+  
+  /* Modernized, smoother gradient blending */
+  background: linear-gradient(135deg, #2e266f 0%, #5b548a 100%); 
+  color: #ffffff;
+  
+  /* Layout & Spacing */
+  margin: 60px auto; /* Reduced giant top margin; balanced vertically */
+  border-radius: 24px; /* Enhanced curvature for a friendly, modern look */
+  padding: 40px 32px; 
+  text-align: center;
+  
+  /* Smooth UI enhancements */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 20px 25px -5px rgba(0, 0, 0, 0.15); /* Layered shadow for authentic depth */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle inner border to pop against dark backgrounds */
+  backdrop-filter: blur(10px); /* Optional: dynamic glassmorphism look if background is complex */
+  
+  /* Font smoothing fallback */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
 
 .search{
     width: 100%;
